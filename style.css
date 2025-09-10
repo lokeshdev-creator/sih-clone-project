@@ -1,0 +1,128 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    font-weight: bold !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.container-fluid.logo{
+height: 100px !important;
+width: 100px !important;
+}
+body{
+    padding-top: 80px;
+}
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+     padding: 0 !important; 
+}
+.main{
+    position: relative;
+    background-image: url("image/backgroundimag1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.main.box{
+    height: 80vh;
+    width: 100%;
+    position:relative;
+    background-color: rgba(0, 0,0,1);
+}
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.main .box {
+    position: relative;
+    z-index: 2;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-modal{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-content {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.7);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Center text and form elements */
+    text-align: center; /* ✅ Center heading and text */
+}
+
+.form-content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Center input fields horizontally */
+}
+
+.form-content input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-content button {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-content button:hover {
+    background-color: darkgreen;
+}
+
+.form-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.contact-us{
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+}
