@@ -24,7 +24,8 @@
 
             <!-- Collapsible Navbar Content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div>
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -49,29 +50,83 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">market</a>
                     </li>
-                    <li class="nav-item">
-    <a class="nav-link" href="#" id="open-login">Login</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="#" id="open-signup">Signup</a>
-</li>
                     
                 </ul>
+                </div>
+               
 
                 <!-- Search Form -->
-                <form class="d-flex" role="search">
+                 <div>
+                    <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                 </div>
+                
+                <!-- login button and signup button  -->
+                <div>
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <button class="btn btn-outline-success" type="submit">login</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-outline-success" type="submit">Sign</button>
+        </li>
+    </ul>
+                </div>
+                
             </div>
         </div>
     </nav>
 
-    <div class="main">
-        <div class="box">
 
-        </div>
+     <!-- Hero Section -->
+    <div class="main">
+        <div class="box"></div>
     </div>
+
+    <!-- ✅ Marketplace Section -->
+    <section class="marketplace" id="marketplace">
+        <h2>🌾 Kerala Agriculture Marketplace</h2>
+        <p class="subtitle">Buy and Sell Tools & Crops directly from Kerala Farmers</p>
+
+        <div class="cards">
+            <!-- Tools Card -->
+            <div class="card">
+                <!-- 👇 Replace with your tools image -->
+                <img src="image/selling tools.jpeg" alt="Farming Tools">
+                <div class="card-content">
+                    <h3>Selling Tools</h3>
+                    <p>Find the best farming tools and equipment directly from trusted sellers in Kerala.</p>
+                    <a href="#">Explore Tools</a>
+                </div>
+            </div>
+
+            <!-- Crops Card -->
+            <div class="card">
+                <!-- 👇 Replace with your crops image -->
+                <img src="image/selling crops.jpeg" alt="Fresh Crops">
+                <div class="card-content">
+                    <h3>Selling Crops</h3>
+                    <p>Sell your fresh harvest and connect with buyers across Kerala instantly.</p>
+                    <a href="#">Explore Crops</a>
+                </div>
+            </div>
+
+            <!-- Pesticide&Insecticide -->
+             <div class="card">
+                <!-- 👇 Replace with your crops image -->
+                <img src="image/seeds.png" alt="Fresh Crops">
+                <div class="card-content">
+                    <h3>Buy Seeds/Pesticide/Insecticide etc</h3>
+                    <p>Buy the Pesticide and Insecticide across Kerala instantly from sellers or government.</p>
+                    <a href="#">Explore Price</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
      <!-- login up -->
  <div class="form-modal" id="login-mod">
@@ -118,7 +173,7 @@
     </div>
 
     <footer class="contact-us">
-
+        
     </footer>
 
     <!-- Custom JS -->

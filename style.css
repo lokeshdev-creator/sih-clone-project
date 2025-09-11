@@ -123,6 +123,99 @@ body{
 
 .contact-us{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-color: #222;
+}
+
+/*  Marketplace Section */
+.marketplace {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4fff4;
+}
+
+.marketplace h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.marketplace .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s, border 0.4s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #2e7d32;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.5);
+    border: 2px solid #2e7d32;
+}
+
+.card:hover h3 {
+    color: #1b5e20;
+}
+
+.card a:hover {
+    background: #1b5e20;
+}
+.btn{
+    margin: 4px !important;
+    border-radius: 40px !important;
+}
+.collapse{
+    display: flex;
+    justify-content: space-between;
 }
