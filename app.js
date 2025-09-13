@@ -53,3 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.target === signupModal) closeModal(signupModal);
     });
 });
+
+const micbutton=document.getElementById("micButton");
+micbutton.addEventListener("click",()=>{
+    alert("this is for voice reconginser to ai assitant");
+})
